@@ -40,9 +40,9 @@ def hit?(cardtotal)
     new = deal_card 
     cardtotal += new 
     return cardtotal 
+  end 
   invalid_command
   prompt_user  
-  end 
 end
 
 def invalid_command
