@@ -20,11 +20,15 @@ def get_user_input
 end
 
 def end_game(cardtotal)
-  puts ""
+  puts "Sorry, you hit #{cardtotal}. Thanks for playing!"
 end
 
 def initial_round
-  # code #initial_round here
+  a = deal_card
+  b = deal_card
+  sum = a + b 
+  display_card_total(sum)
+  return sum 
 end
 
 def hit?
