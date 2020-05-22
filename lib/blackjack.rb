@@ -42,8 +42,7 @@ def hit?(cardtotal)
     return cardtotal 
   end 
   invalid_command
-  prompt_user
-  return cardtotal 
+  hit?(cardtotal)
 end
 
 def invalid_command
@@ -55,6 +54,9 @@ end
 #####################################################
 
 def runner
-  # code runner here
+  welcome 
+  sum1 = initial_round
+  display_card_total(sum1)
+  hit?(sum1)
 end
     
